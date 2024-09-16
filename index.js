@@ -31,6 +31,24 @@
         - Either google how you can cycle through a string with JavaScript or utilize the provided resource link within the ReadMe.md of this repo.
 */
 
+// * 1 
+for(let i =0; i<= 20; i +=2){
+    console.log(i);
+}
+
+//  *2
+for(let i = 10; i>=0; i--){
+    console.log(i);
+}
+
+// * 3
+for(let i = 0; i >= -25; i-=2){
+    console.log(i)
+}
+
+// * 4
+
+
 //! For In Loop
 /* 
     - Great for iterating over values in an object.
@@ -44,6 +62,17 @@ let student = {
     week: 3
 }
 
+
+for (item in student){
+    console.log(item);
+    console.log(student[item])
+}
+
+let arr = [1,2,3,4];
+for(number in arr){
+    console.log(number)
+    console.log(arr[number])
+}
 //? Quick Challenge
 /* 
     - Write a for in loop that capitalizes the first letter of a name, and lowercase the rest of the name.
@@ -52,6 +81,18 @@ let student = {
 */
 
 let personName = 'michAEL';
+let capName;
+
+for(let i in personName){
+    console.log(i);
+
+    if(i==0) {
+        capName = personName[i].toUpperCase();
+    }else {capName += personName[i].toLowerCase()
+
+    }
+}
+
 
 //! For Of Loop
 /* 
@@ -66,5 +107,13 @@ let newStudent = {
     awesome: true
 }
 
+// for(item of newStudent){
+//     console.log(item);
+// }
+
 
 let cats = ['tabby','british shorthair','burmese','maine coon','rag doll'];
+
+for (cat of cats){
+    console.log(cat, 'says meow')
+}
